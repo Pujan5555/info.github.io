@@ -74,3 +74,11 @@ h1{
     border: none;
     border-radius: 8px;
 }
+#Mode{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
