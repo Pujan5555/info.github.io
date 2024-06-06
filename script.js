@@ -51,3 +51,21 @@ document.getElementById('details').addEventListener('submit', function (event) {
         document.getElementById('age').value = "";
     }
 });
+document.getElementById('Mode').addEventListener('click', function (event) {
+    let conditionOfMode = document.getElementById('Mode').textContent;
+    let mode = document.querySelector('body');
+    if (conditionOfMode == "Dark Mode") {
+        mode.style.backgroundColor = "black";
+        document.getElementById('Mode').style.backgroundColor = "White"
+        document.getElementById('Mode').style.color = "Black"
+        document.getElementById('Mode').style.border = "solid Black 1px"
+        document.getElementById('Mode').textContent = "Light Mode"
+    }
+    if(conditionOfMode == "Light Mode"){
+        mode.style.backgroundColor = "Lavender";
+        document.getElementById('Mode').style.backgroundColor = "Black"
+        document.getElementById('Mode').style.color = "White"
+        document.getElementById('Mode').style.border = "none"
+        document.getElementById('Mode').textContent = "Dark Mode"
+    }
+});
